@@ -1,0 +1,91 @@
+
+            @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+            
+            :root {
+                --nav-brown: rgba(74, 55, 40, 0.8);
+                --accent-orange: #C6865D;
+                --text-brown: #4A3728;
+            }
+
+            body { font-family: 'Plus+Jakarta+Sans', sans-serif; background: #fff; }
+            .font-serif { font-family: 'Cormorant+Garamond', serif; }
+
+            .hero-section {
+                background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('https://images.unsplash.com/photo-1618773928121-c32242e63f39?q=80&w=2070&auto=format&fit=crop');
+                background-size: cover;
+                background-position: center;
+                min-height: 100vh;
+            }
+
+            .glass-pill {
+                background: var(--nav-brown);
+                backdrop-filter: blur(10px);
+                border: 1px solid rgba(255,255,255,0.1);
+            }
+
+            /* Dropdown Animation */
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                top: 110%;
+                left: 0;
+                background: white;
+                border-radius: 12px;
+                box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+                min-width: 160px;
+                z-index: 50;
+            }
+            .dropdown:hover .dropdown-content { display: block; animation: fadeInUp 0.3s ease; }
+
+            @keyframes fadeInUp {
+                from { opacity: 0; transform: translateY(10px); }
+                to { opacity: 1; transform: translateY(0); }
+            }
+
+    /* Clean Hide Scrollbar */
+    .no-scrollbar::-webkit-scrollbar { display: none; }
+    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+
+    /* Continuous Marquee Animation */
+    @keyframes marquee {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-50%); }
+    }
+
+    .animate-marquee {
+        display: flex;
+        width: max-content;
+        animation: marquee 30s linear infinite;
+    }
+
+    /* Pause animation on hover */
+    .group:hover .animate-marquee {
+        animation-play-state: paused;
+    }
+
+    .no-scrollbar::-webkit-scrollbar { display: none; }
+    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    
+    @keyframes spin-slow {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+    }
+    .animate-spin-slow { animation: spin-slow 8s linear infinite; }
+
+
+    /* Slow Rotation for the Badge */
+    @keyframes spin-slow {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+    }
+    .animate-spin-slow {
+        animation: spin-slow 12s linear infinite;
+    }
+
+    /* Additional styles for the select appearance */
+    select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+    }

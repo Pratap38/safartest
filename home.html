@@ -1,0 +1,950 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Safar | Luxury Booking</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <link rel="stylesheet" href="home.css">
+        
+    </head>
+    <body>
+
+        <nav class="fixed top-6 left-0 w-full px-6 md:px-12 flex items-center justify-between z-[1000]">
+            <div class="glass-pill flex items-center p-2 rounded-full pr-10">
+                <div class=" w-12 h-12 rounded-full flex items-center justify-center mr-6">
+                    <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?q=80&w=800" class="w-7 opacity-80 rounded-3xl" alt="logo">
+                </div>
+                <div class="hidden lg:flex items-center gap-8 text-white/90 text-sm font-medium">
+                    <div class="relative dropdown">
+                        <button class="hover:text-white flex items-center gap-1">Home <i class="fa-solid fa-chevron-down text-[10px]"></i></button>
+                        <div class="dropdown-content py-2"><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-50">Main Home</a></div>
+                    </div>
+                    <div class="relative dropdown">
+                        <button class="hover:text-white flex items-center gap-1">Pages <i class="fa-solid fa-chevron-down text-[10px]"></i></button>
+                        <div class="dropdown-content py-2"><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-50">About</a></div>
+                    </div>
+                    <div class="relative dropdown">
+                        <button class="hover:text-white flex items-center gap-1">Accommodation <i class="fa-solid fa-chevron-down text-[10px]"></i></button>
+                        <div class="dropdown-content py-2"><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-50">Suites</a></div>
+                    </div>
+                    <div class="relative dropdown">
+                        <button class="hover:text-white flex items-center gap-1">Blog <i class="fa-solid fa-chevron-down text-[10px]"></i></button>
+                        <div class="dropdown-content py-2"><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-50">News</a></div>
+                    </div>
+                    <a href="#" class="hover:text-white">Contact</a>
+                </div>
+            </div>
+
+            <div class="glass-pill flex items-center p-2 rounded-full">
+                <button class="bg-white text-[#4A3728] px-8 py-3.5 rounded-full font-bold text-xs tracking-widest hover:bg-opacity-90 transition">
+                    BOOK NOW
+                </button>
+                <button class="px-4 text-white text-xl">
+                    <i class="fa-solid fa-bars-staggered"></i>
+                </button>
+            </div>
+        </nav>
+
+        <section class="hero-section relative flex items-center pt-20 ">
+            <div class="container mx-auto px-6 md:px-12 grid lg:grid-cols-2 gap-12 items-center">
+                
+                <div class="text-white space-y-8 mt-20">
+                    <h1 class="font-serif text-7xl md:text-9xl leading-tight tracking-tight">
+                        ONE CLICK<br>EASY BOOKING
+                    </h1>
+
+                    <div class="glass-pill p-4 rounded-3xl inline-flex items-center gap-6 max-w-md border-white/20">
+                        <div class="relative w-32 h-20 rounded-xl overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?q=80&w=200" class="object-cover w-full h-full" alt="room">
+                            <div class="absolute inset-0 flex items-center justify-center bg-black/20">
+                                <i class="fa-solid fa-play text-white text-sm"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg">Book Your Stay Now</h4>
+                            <p class="text-xs text-white/70 leading-relaxed">Effortlessly manage your stay with our seamless hotel reservations — easy booking</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <div class="absolute -top-12 right-0 flex gap-3 mt-10">
+                        <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-gray-600 shadow-lg"><i class="fa-solid fa-key text-sm"></i></div>
+                        <div class="w-12 h-12 bg-[#C6865D] rounded-full flex items-center justify-center text-white shadow-lg"><i class="fa-solid fa-globe text-sm"></i></div>
+                        <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-gray-600 shadow-lg"><i class="fa-solid fa-plane text-sm"></i></div>
+                    </div>
+
+                    <div class="bg-white rounded-[2.5rem] p-10 shadow-2xl max-w-lg ml-auto mt-20">
+                        <div class="text-center mb-10">
+                            <h2 class="font-serif text-4xl text-[#4A3728]">Reserve Your Room</h2>
+                            <p class="text-[10px] tracking-[0.2em] text-gray-400 mt-2 uppercase font-bold">Find comfort, reserve with ease</p>
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-6">
+                            <div class="space-y-2">
+                                <label class="text-[10px] font-black text-gray-800 uppercase">Check-In *</label>
+                                <input type="date" class="w-full p-4 bg-gray-100 rounded-2xl text-sm outline-none border-none">
+                            </div>
+                            <div class="space-y-2">
+                                <label class="text-[10px] font-black text-gray-800 uppercase">Check-Out *</label>
+                                <input type="date" class="w-full p-4 bg-gray-100 rounded-2xl text-sm outline-none border-none">
+                            </div>
+                            <div class="space-y-2">
+                                <label class="text-[10px] font-black text-gray-800 uppercase">Adults</label>
+                                <select class="w-full p-4 bg-gray-100 rounded-2xl text-sm outline-none appearance-none">
+                                    <option>1</option><option>2</option>
+                                </select>
+                            </div>
+                            <div class="space-y-2">
+                                <label class="text-[10px] font-black text-gray-800 uppercase">Children</label>
+                                <select class="w-full p-4 bg-gray-100 rounded-2xl text-sm outline-none appearance-none">
+                                    <option>0</option><option>1</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <button class="w-full mt-8 bg-[#C6865D] text-white py-5 rounded-full font-bold text-sm tracking-widest flex items-center justify-center gap-3 hover:bg-[#B5754C] transition shadow-lg shadow-orange-900/20">
+                            CHECK AVAILABILITY 
+                            <span class="bg-white text-[#C6865D] w-6 h-6 rounded-full flex items-center justify-center"><i class="fa-solid fa-chevron-right text-[10px]"></i></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-white py-20 px-6 md:px-12">
+    <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-16 space-y-4">
+            <p class="text-[11px] font-bold tracking-[0.4em] text-[#C6865D] uppercase">02 _ Learn More About Us</p>
+            <h2 class="font-serif text-4xl md:text-6xl text-[#4A3728] leading-tight max-w-4xl mx-auto">
+                Create Memories Across The Globe with Journeys Designed Around You
+            </h2>
+        </div>
+
+        <div class="grid lg:grid-cols-3 gap-12 items-center">
+            <div class="rounded-[2rem] overflow-hidden shadow-2xl h-[450px]">
+                <img src="https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?q=80&w=800" class="w-full h-full object-cover" alt="Luxury Pool">
+            </div>
+
+            <div class="space-y-8">
+                <p class="text-gray-500 leading-relaxed text-sm">
+                    Planning your next getaway has never been easier with our seamless hotel booking experience. Whether you seek a luxurious resort, a cosy boutique stay.
+                </p>
+                
+                <div class="border-2 border-[#D4A373] p-3 rounded-[2.5rem] flex items-center gap-4 bg-white shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?q=80&w=200" class="w-24 h-16 rounded-2xl object-cover" alt="Interior">
+                    <div class="flex-1">
+                        <select class="text-sm font-bold text-[#4A3728] bg-transparent outline-none w-full">
+                            <option>Main Home</option>
+                        </select>
+                        <p class="text-[9px] text-gray-400 mt-1 leading-tight">Your perfect hotel experience starts here for travel moments.</p>
+                    </div>
+                    <button class="w-10 h-10 rounded-full border border-gray-200 flex items-center justify-center text-gray-400 hover:bg-[#D4A373] hover:text-white transition">
+                        <i class="fa-solid fa-chevron-right text-xs"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="relative flex justify-center lg:justify-end">
+                <div class="w-[320px] h-[400px] rounded-[2rem] overflow-hidden shadow-2xl">
+                    <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=800" class="w-full h-full object-cover" alt="Staff Member">
+                </div>
+
+                <div class="absolute -bottom-10 -left-10 md:-left-16 w-48 h-48 flex items-center justify-center">
+                    <div class="absolute inset-0 animate-spin-slow">
+                        <svg viewBox="0 0 100 100" class="w-full h-full">
+                            <defs>
+                                <path id="circlePath" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" />
+                            </defs>
+                            <text class="fill-[#4A3728] font-bold text-[9px] uppercase tracking-[0.2em]">
+                                <textPath xlink:href="#circlePath ">
+                                    • Learn More • About Safar • Learn More • About Safar
+                                </textPath>
+                            </text>
+                        </svg>
+                    </div>
+                    <div class="bg-white w-14 h-14 rounded-full shadow-lg flex items-center justify-center border border-gray-100 z-10">
+                        <i class="fa-solid fa-arrow-right text-[#D4A373] -rotate-45"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="bg-[#F9F7F5] py-20 px-6 md:px-12 overflow-hidden">
+    <div class="max-w-7xl mx-auto">
+        
+        <div class="flex items-end justify-between mb-12">
+            <div class="space-y-4">
+                <p class="text-[11px] font-bold tracking-[0.4em] text-[#C6865D] uppercase">02 _ Accommodation Category</p>
+                <h2 class="font-serif text-4xl md:text-6xl text-[#4A3728]">Browse Popular Categories</h2>
+            </div>
+
+            <div class="flex items-center gap-3 bg-white p-2 rounded-full shadow-sm">
+                <button onclick="scrollSlider('prev')" class="w-12 h-12 rounded-full border border-gray-100 flex items-center justify-center text-gray-400 hover:bg-[#C6865D] hover:text-white transition">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </button>
+                <button onclick="scrollSlider('next')" class="w-12 h-12 rounded-full border border-gray-100 flex items-center justify-center text-gray-400 hover:bg-[#C6865D] hover:text-white transition">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="categorySlider" 
+             class="flex gap-6 overflow-x-auto snap-x snap-mandatory no-scrollbar scroll-smooth pb-8"
+             onmouseenter="pauseAutoScroll()" 
+             onmouseleave="startAutoScroll()">
+            
+            <div class="min-w-[300px] bg-white rounded-3xl p-10 flex flex-col items-center text-center snap-start border border-gray-50 hover:shadow-xl transition group">
+                <div class="w-32 h-32 bg-gray-50 rounded-full flex items-center justify-center mb-6 group-hover:bg-[#F9F7F5] transition">
+                    <i class="fa-solid fa-building-columns text-4xl text-gray-400 group-hover:text-[#C6865D]"></i>
+                </div>
+                <h3 class="font-serif text-2xl text-[#4A3728]">Resort Hotels</h3>
+                <p class="text-xs text-gray-400 mt-2 font-bold tracking-widest uppercase">137+ Hotels</p>
+            </div>
+
+            
+
+            <div class="min-w-[300px] bg-white rounded-3xl p-10 flex flex-col items-center text-center snap-start border border-gray-50 hover:shadow-xl transition">
+                <div class="w-32 h-32 bg-gray-50 rounded-full flex items-center justify-center mb-6">
+                    <i class="fa-solid fa-tree-city text-4xl text-gray-400"></i>
+                </div>
+                <h3 class="font-serif text-2xl text-[#4A3728]">Eco Hotels</h3>
+                <p class="text-xs text-gray-400 mt-2 font-bold tracking-widest uppercase">250+ Hotels</p>
+            </div>
+
+            <div class="min-w-[300px] bg-white rounded-3xl p-10 flex flex-col items-center text-center snap-start border border-gray-50 hover:shadow-xl transition">
+                <div class="w-32 h-32 bg-gray-50 rounded-full flex items-center justify-center mb-6">
+                    <i class="fa-solid fa-crown text-4xl text-gray-400"></i>
+                </div>
+                <h3 class="font-serif text-2xl text-[#4A3728]">Luxury Hotels</h3>
+                <p class="text-xs text-gray-400 mt-2 font-bold tracking-widest uppercase">160+ Hotels</p>
+            </div>
+             <div class="min-w-[300px] bg-white rounded-3xl p-10 flex flex-col items-center text-center snap-start border border-gray-50 hover:shadow-xl transition">
+                <div class="w-32 h-32 bg-gray-50 rounded-full flex items-center justify-center mb-6">
+                    <i class="fa-solid fa-crown text-4xl text-gray-400"></i>
+                </div>
+                <h3 class="font-serif text-2xl text-[#4A3728]">Luxury Hotels</h3>
+                <p class="text-xs text-gray-400 mt-2 font-bold tracking-widest uppercase">160+ Hotels</p>
+            </div>
+             <div class="min-w-[300px] bg-white rounded-3xl p-10 flex flex-col items-center text-center snap-start border border-gray-50 hover:shadow-xl transition">
+                <div class="w-32 h-32 bg-gray-50 rounded-full flex items-center justify-center mb-6">
+                    <i class="fa-solid fa-crown text-4xl text-gray-400"></i>
+                </div>
+                <h3 class="font-serif text-2xl text-[#4A3728]">Luxury Hotels</h3>
+                <p class="text-xs text-gray-400 mt-2 font-bold tracking-widest uppercase">160+ Hotels</p>
+            </div>
+             <div class="min-w-[300px] bg-white rounded-3xl p-10 flex flex-col items-center text-center snap-start border border-gray-50 hover:shadow-xl transition">
+                <div class="w-32 h-32 bg-gray-50 rounded-full flex items-center justify-center mb-6">
+                    <i class="fa-solid fa-crown text-4xl text-gray-400"></i>
+                </div>
+                <h3 class="font-serif text-2xl text-[#4A3728]">Luxury Hotels</h3>
+                <p class="text-xs text-gray-400 mt-2 font-bold tracking-widest uppercase">160+ Hotels</p>
+            </div>
+             <div class="min-w-[300px] bg-white rounded-3xl p-10 flex flex-col items-center text-center snap-start border border-gray-50 hover:shadow-xl transition">
+                <div class="w-32 h-32 bg-gray-50 rounded-full flex items-center justify-center mb-6">
+                    <i class="fa-solid fa-crown text-4xl text-gray-400"></i>
+                </div>
+                <h3 class="font-serif text-2xl text-[#4A3728]">Luxury Hotels</h3>
+                <p class="text-xs text-gray-400 mt-2 font-bold tracking-widest uppercase">160+ Hotels</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- icon wala hai bed wale sare isme card -->
+<section class="bg-white py-24 px-6 md:px-12">
+    <div class="max-w-7xl mx-auto">
+        
+        <div class="text-center mb-16 space-y-3">
+            <p class="text-[11px] font-bold tracking-[0.4em] text-[#C6865D] uppercase">Our Accommodations</p>
+            <h2 class="font-serif text-5xl md:text-6xl text-[#4A3728]">Choose your Style</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+            
+            <div class="group bg-[#FDFBF9] rounded-[2.5rem] overflow-hidden border border-gray-100 shadow-sm hover:shadow-2xl transition-all duration-500 flex flex-col h-full">
+                <div class="p-8 flex justify-between items-start">
+                    <div class="space-y-2">
+                        <div class="flex items-center gap-4 text-[10px] font-bold text-gray-400 uppercase tracking-widest">
+                            <span><i class="fa-solid fa-bed text-[#C6865D] mr-1"></i> Double</span>
+                            <span><i class="fa-solid fa-users text-[#C6865D] mr-1"></i> 2 Persons</span>
+                        </div>
+                        <p class="text-2xl font-serif text-[#4A3728]">From <span class="text-3xl font-bold">$100</span><span class="text-sm font-sans text-gray-400">/Per Night</span></p>
+                    </div>
+                    <button class="w-12 h-12 rounded-full bg-white shadow-md flex items-center justify-center text-[#C6865D] hover:bg-[#C6865D] hover:text-white transition-colors">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                </div>
+
+                <div class="px-6 relative">
+                    <div class="overflow-hidden rounded-[2rem] aspect-[4/3]">
+                        <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?q=80&w=800" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="Room">
+                    </div>
+                </div>
+
+                <div class="p-8 space-y-4 flex-grow flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-2xl font-serif text-[#4A3728] group-hover:text-[#C6865D] transition-colors">Golden Horizon Retreat</h3>
+                        <p class="text-sm text-gray-500 mt-2 leading-relaxed line-clamp-2">Details Here About Our Room Experience elegance and comfort in every detail.</p>
+                    </div>
+                    <a href="#" class="inline-flex items-center gap-2 text-xs font-black uppercase tracking-[0.2em] text-[#4A3728] pt-4 group-hover:gap-4 transition-all">
+                        Explore Now <i class="fa-solid fa-arrow-right-long text-[#C6865D]"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="group bg-[#FDFBF9] rounded-[2.5rem] overflow-hidden border border-gray-100 shadow-sm hover:shadow-2xl transition-all duration-500 flex flex-col h-full">
+                <div class="p-8 flex justify-between items-start">
+                    <div class="space-y-2">
+                        <div class="flex items-center gap-4 text-[10px] font-bold text-gray-400 uppercase tracking-widest">
+                            <span><i class="fa-solid fa-bed text-[#C6865D] mr-1"></i> King</span>
+                            <span><i class="fa-solid fa-users text-[#C6865D] mr-1"></i> 2 Persons</span>
+                        </div>
+                        <p class="text-2xl font-serif text-[#4A3728]">From <span class="text-3xl font-bold">$150</span><span class="text-sm font-sans text-gray-400">/Per Night</span></p>
+                    </div>
+                    <button class="w-12 h-12 rounded-full bg-white shadow-md flex items-center justify-center text-[#C6865D] hover:bg-[#C6865D] hover:text-white transition-colors">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                </div>
+
+                <div class="px-6 relative">
+                    <div class="overflow-hidden rounded-[2rem] aspect-[4/3]">
+                        <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?q=80&w=800" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="Room">
+                    </div>
+                </div>
+
+                <div class="p-8 space-y-4 flex-grow flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-2xl font-serif text-[#4A3728] group-hover:text-[#C6865D] transition-colors">Serenity Grand Suite</h3>
+                        <p class="text-sm text-gray-500 mt-2 leading-relaxed line-clamp-2">A masterclass in luxury living with panoramic views.</p>
+                    </div>
+                    <a href="#" class="inline-flex items-center gap-2 text-xs font-black uppercase tracking-[0.2em] text-[#4A3728] pt-4 group-hover:gap-4 transition-all">
+                        Explore Now <i class="fa-solid fa-arrow-right-long text-[#C6865D]"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="group bg-[#FDFBF9] rounded-[2.5rem] overflow-hidden border border-gray-100 shadow-sm hover:shadow-2xl transition-all duration-500 flex flex-col h-full">
+                <div class="p-8 flex justify-between items-start">
+                    <div class="space-y-2">
+                        <div class="flex items-center gap-4 text-[10px] font-bold text-gray-400 uppercase tracking-widest">
+                            <span><i class="fa-solid fa-bed text-[#C6865D] mr-1"></i> Single</span>
+                            <span><i class="fa-solid fa-users text-[#C6865D] mr-1"></i> 1 Person</span>
+                        </div>
+                        <p class="text-2xl font-serif text-[#4A3728]">From <span class="text-3xl font-bold">$80</span><span class="text-sm font-sans text-gray-400">/Per Night</span></p>
+                    </div>
+                    <button class="w-12 h-12 rounded-full bg-white shadow-md flex items-center justify-center text-[#C6865D] hover:bg-[#C6865D] hover:text-white transition-colors">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                </div>
+
+                <div class="px-6 relative">
+                    <div class="overflow-hidden rounded-[2rem] aspect-[4/3]">
+                        <img src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?q=80&w=800" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" alt="Room">
+                    </div>
+                </div>
+
+                <div class="p-8 space-y-4 flex-grow flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-2xl font-serif text-[#4A3728] group-hover:text-[#C6865D] transition-colors">The Velvet Studio</h3>
+                        <p class="text-sm text-gray-500 mt-2 leading-relaxed line-clamp-2">Chic and modern studio designed for the solo traveler.</p>
+                    </div>
+                    <a href="#" class="inline-flex items-center gap-2 text-xs font-black uppercase tracking-[0.2em] text-[#4A3728] pt-4 group-hover:gap-4 transition-all">
+                        Explore Now <i class="fa-solid fa-arrow-right-long text-[#C6865D]"></i>
+                    </a>
+                </div>
+                
+            </div>
+            
+
+            </div>
+    </div>
+</section>
+<!-- little crousel1 -->
+ <section class="bg-[#FDFBF9] py-16 border-y border-gray-100 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6 mb-10 text-center">
+        <p class="text-[11px] font-bold tracking-[0.4em] text-[#C6865D] uppercase mb-2">Our Premium Services</p>
+        <h2 class="font-serif text-4xl text-[#4A3728]">Experience Excellence</h2>
+    </div>
+
+    <div class="flex overflow-hidden group">
+        <div class="flex animate-marquee whitespace-nowrap gap-12 items-center">
+            
+            <div class="flex items-center gap-4 bg-white px-8 py-6 rounded-2xl shadow-sm border border-gray-50">
+                <div class="w-12 h-12 bg-[#F9F7F5] rounded-full flex items-center justify-center text-[#C6865D]">
+                    <i class="fa-solid fa-mug-hot text-xl"></i>
+                </div>
+                <div>
+                    <h4 class="font-bold text-[#4A3728] text-sm">Morning Coffee</h4>
+                    <p class="text-[10px] text-gray-400 uppercase tracking-widest font-bold">Premium Blends</p>
+                </div>
+            </div>
+
+            <div class="flex items-center gap-4 bg-white px-8 py-6 rounded-2xl shadow-sm border border-gray-50">
+                <div class="w-12 h-12 bg-[#F9F7F5] rounded-full flex items-center justify-center text-[#C6865D]">
+                    <i class="fa-solid fa-bed text-xl"></i>
+                </div>
+                <div>
+                    <h4 class="font-bold text-[#4A3728] text-sm">King Size Beds</h4>
+                    <p class="text-[10px] text-gray-400 uppercase tracking-widest font-bold">Luxury Linens</p>
+                </div>
+            </div>
+
+            <div class="flex items-center gap-4 bg-white px-8 py-6 rounded-2xl shadow-sm border border-gray-50">
+                <div class="w-12 h-12 bg-[#F9F7F5] rounded-full flex items-center justify-center text-[#C6865D]">
+                    <i class="fa-solid fa-fire text-xl"></i>
+                </div>
+                <div>
+                    <h4 class="font-bold text-[#4A3728] text-sm">Night Camping</h4>
+                    <p class="text-[10px] text-gray-400 uppercase tracking-widest font-bold">Under the Stars</p>
+                </div>
+            </div>
+
+            <div class="flex items-center gap-4 bg-white px-8 py-6 rounded-2xl shadow-sm border border-gray-50">
+                <div class="w-12 h-12 bg-[#F9F7F5] rounded-full flex items-center justify-center text-[#C6865D]">
+                    <i class="fa-solid fa-spa text-xl"></i>
+                </div>
+                <div>
+                    <h4 class="font-bold text-[#4A3728] text-sm">Spa & Wellness</h4>
+                    <p class="text-[10px] text-gray-400 uppercase tracking-widest font-bold">Pure Relaxation</p>
+                </div>
+            </div>
+
+            <div class="flex items-center gap-4 bg-white px-8 py-6 rounded-2xl shadow-sm border border-gray-50">
+                <div class="w-12 h-12 bg-[#F9F7F5] rounded-full flex items-center justify-center text-[#C6865D]">
+                    <i class="fa-solid fa-utensils text-xl"></i>
+                </div>
+                <div>
+                    <h4 class="font-bold text-[#4A3728] text-sm">Fine Dining</h4>
+                    <p class="text-[10px] text-gray-400 uppercase tracking-widest font-bold">Expert Chefs</p>
+                </div>
+            </div>
+
+            <div class="flex items-center gap-4 bg-white px-8 py-6 rounded-2xl shadow-sm border border-gray-50">
+                <div class="w-12 h-12 bg-[#F9F7F5] rounded-full flex items-center justify-center text-[#C6865D]">
+                    <i class="fa-solid fa-mug-hot text-xl"></i>
+                </div>
+                <div>
+                    <h4 class="font-bold text-[#4A3728] text-sm">Morning Coffee</h4>
+                    <p class="text-[10px] text-gray-400 uppercase tracking-widest font-bold">Premium Blends</p>
+                </div>
+            </div>
+            </div>
+    </div>
+</section>
+<!-- king size bedd -->
+ <section class="bg-white py-24 px-6">
+    <div class="max-w-6xl mx-auto text-center">
+        
+        <div class="mb-16">
+            <h2 class="font-serif text-5xl text-[#4A3728] mb-8">Choose Your Comfort</h2>
+            
+            <div class="inline-flex bg-[#F9F7F5] p-2 rounded-full border border-gray-100 shadow-inner">
+                <button onclick="switchBed('normal')" id="btn-normal" 
+                    class="px-8 py-3 rounded-full font-bold text-sm transition-all bg-[#4A3728] text-white shadow-lg">
+                    NORMAL BED
+                </button>
+                <button onclick="switchBed('king')" id="btn-king" 
+                    class="px-8 py-3 rounded-full font-bold text-sm transition-all text-gray-400 hover:text-[#4A3728]">
+                    KING SIZE
+                </button>
+            </div>
+        </div>
+
+        <div class="relative inline-block group">
+            
+            <img id="bed-image" src="https://i.ibb.co/p6V6p6m/normal-twin.png" 
+                 class="max-w-full h-auto transition-opacity duration-500" alt="Bed View">
+
+            <div class="absolute top-[20%] right-[25%] group/spot">
+                <div class="w-10 h-10 bg-white rounded-full shadow-xl flex items-center justify-center cursor-pointer border border-gray-100 hover:scale-110 transition">
+                    <i class="fa-solid fa-plus text-[#C6865D]"></i>
+                </div>
+                <div class="absolute bottom-12 left-1/2 -translate-x-1/2 w-48 bg-white p-4 rounded-2xl shadow-2xl border border-gray-50 opacity-0 group-hover/spot:opacity-100 pointer-events-none transition-all duration-300 translate-y-2 group-hover/spot:translate-y-0 z-50">
+                    <h5 class="font-bold text-[#4A3728] text-sm">Premium Tufted</h5>
+                    <p class="text-[10px] text-gray-500 mt-1">Hand-crafted gray fabric with high-density foam padding.</p>
+                </div>
+            </div>
+
+            <div class="absolute top-[60%] left-[30%] group/spot">
+                <div class="w-10 h-10 bg-white rounded-full shadow-xl flex items-center justify-center cursor-pointer border border-gray-100 hover:scale-110 transition">
+                    <i class="fa-solid fa-plus text-[#C6865D]"></i>
+                </div>
+                <div class="absolute bottom-12 left-1/2 -translate-x-1/2 w-48 bg-white p-4 rounded-2xl shadow-2xl border border-gray-50 opacity-0 group-hover/spot:opacity-100 pointer-events-none transition-all duration-300 translate-y-2 group-hover/spot:translate-y-0 z-50">
+                    <h5 class="font-bold text-[#4A3728] text-sm">Cloud-9 Foam</h5>
+                    <p class="text-[10px] text-gray-500 mt-1">Multi-layered memory foam for spinal alignment.</p>
+                </div>
+            </div>
+
+            <div class="absolute bottom-[10%] left-[50%] group/spot">
+                <div class="w-10 h-10 bg-white rounded-full shadow-xl flex items-center justify-center cursor-pointer border border-gray-100 hover:scale-110 transition">
+                    <i class="fa-solid fa-plus text-[#C6865D]"></i>
+                </div>
+                <div class="absolute top-12 left-1/2 -translate-x-1/2 w-48 bg-white p-4 rounded-2xl shadow-2xl border border-gray-50 opacity-0 group-hover/spot:opacity-100 pointer-events-none transition-all duration-300 -translate-y-2 group-hover/spot:translate-y-0 z-50">
+                    <h5 class="font-bold text-[#4A3728] text-sm">Solid Oak Base</h5>
+                    <p class="text-[10px] text-gray-500 mt-1">Sustainable solid wood frame with a natural oak finish.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+<!-- end footer -->
+<section class="bg-[#F9F7F5] py-24 px-6 md:px-12">
+    <div class="max-w-7xl mx-auto">
+        
+        <div class="grid lg:grid-cols-2 gap-12 items-start mb-20">
+            <div class="space-y-6">
+                <p class="text-[11px] font-bold tracking-[0.4em] text-[#C6865D] uppercase">04 _ Why Safar Special?</p>
+                <h2 class="font-serif text-5xl md:text-7xl text-[#4A3728] leading-tight">
+                    Experience Comfort Convenience Your Perfect Accommodation Awaits
+                </h2>
+            </div>
+
+            <div class="bg-white rounded-[2.5rem] p-10 shadow-sm relative overflow-hidden group hover:shadow-xl transition-all duration-500">
+                <span class="absolute top-6 right-10 text-8xl font-serif text-gray-50 opacity-10 font-bold group-hover:opacity-20 transition-opacity">01</span>
+                <div class="w-16 h-16 bg-[#F9F7F5] rounded-full flex items-center justify-center text-[#C6865D] mb-8">
+                    <i class="fa-solid fa-earth-americas text-2xl"></i>
+                </div>
+                <h3 class="text-3xl font-serif text-[#4A3728] mb-4">Flexible Search</h3>
+                <p class="text-sm text-gray-500 leading-relaxed mb-6 max-w-xs">
+                    Travel is the ultimate way to explore the world, embrace new cultures, and create unforgettable memories.
+                </p>
+                <a href="#" class="inline-flex items-center gap-2 text-[10px] font-black uppercase tracking-widest text-[#4A3728] hover:gap-4 transition-all">
+                    Read More <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-center">
+            
+            <div class="space-y-6 lg:pr-10">
+                <div class="flex -space-x-3 mb-4">
+                    <img src="https://i.pravatar.cc/100?u=1" class="w-12 h-12 rounded-full border-4 border-white">
+                    <img src="https://i.pravatar.cc/100?u=2" class="w-12 h-12 rounded-full border-4 border-white">
+                    <img src="https://i.pravatar.cc/100?u=3" class="w-12 h-12 rounded-full border-4 border-white">
+                    <img src="https://i.pravatar.cc/100?u=4" class="w-12 h-12 rounded-full border-4 border-white">
+                </div>
+                <h3 class="text-2xl font-serif text-[#4A3728] leading-snug">
+                    Unleash Your Inner Explorer. Discover Your Next Destination. Your Next Adventure
+                </h3>
+            </div>
+
+            <div class="bg-[#C6865D] rounded-[2.5rem] p-10 text-white shadow-lg relative overflow-hidden group">
+                <span class="absolute top-6 right-10 text-8xl font-serif text-white opacity-10 font-bold">02</span>
+                <div class="w-16 h-16 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center mb-8">
+                    <i class="fa-solid fa-hotel text-2xl text-white"></i>
+                </div>
+                <h3 class="text-3xl font-serif mb-4">Trusted Listings</h3>
+                <p class="text-sm text-white/80 leading-relaxed mb-6">
+                    Hotels and resorts across countless destinations wherever you travel, we're already there it's a story.
+                </p>
+                <a href="#" class="inline-flex items-center gap-2 text-[10px] font-black uppercase tracking-widest hover:gap-4 transition-all">
+                    Read More <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+            </div>
+
+            <div class="relative flex justify-center">
+                <div class="w-64 h-64 md:w-80 md:h-80 rounded-full border-[1.5px] border-dashed border-[#C6865D] p-3">
+                    <div class="w-full h-full rounded-full overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=800" class="w-full h-full object-cover" alt="Spa">
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-[2.5rem] p-10 shadow-sm relative overflow-hidden group hover:shadow-xl transition-all">
+                <span class="absolute top-6 right-10 text-8xl font-serif text-gray-50 opacity-10 font-bold">03</span>
+                <div class="w-16 h-16 bg-[#F9F7F5] rounded-full flex items-center justify-center text-[#C6865D] mb-8">
+                    <i class="fa-solid fa-sun text-2xl"></i>
+                </div>
+                <h3 class="text-3xl font-serif text-[#4A3728] mb-4">Beautiful View</h3>
+                <p class="text-sm text-gray-500 leading-relaxed mb-6">
+                    Wake up to breath taking scenery every morning our hotels and resorts are located in some of the world's
+                </p>
+                <a href="#" class="inline-flex items-center gap-2 text-[10px] font-black uppercase tracking-widest text-[#4A3728] hover:gap-4 transition-all">
+                    Read More <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+            </div>
+
+            <div class="relative flex justify-center">
+                <div class="w-64 h-64 md:w-80 md:h-80 rounded-full border-[1.5px] border-dashed border-[#C6865D] p-3">
+                    <div class="w-full h-full rounded-full overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1584132967334-10e028bd69f7?q=80&w=800" class="w-full h-full object-cover" alt="Pool View">
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-[2.5rem] p-10 shadow-sm relative overflow-hidden group hover:shadow-xl transition-all">
+                <span class="absolute top-6 right-10 text-8xl font-serif text-gray-50 opacity-10 font-bold">04</span>
+                <div class="w-16 h-16 bg-[#F9F7F5] rounded-full flex items-center justify-center text-[#C6865D] mb-8">
+                    <i class="fa-solid fa-paw text-2xl"></i>
+                </div>
+                <h3 class="text-3xl font-serif text-[#4A3728] mb-4">Pet Friendly Hotels</h3>
+                <p class="text-sm text-gray-500 leading-relaxed mb-6">
+                    Our pet-friendly hotels are designed to welcome every member of your family including your pets.
+                </p>
+                <a href="#" class="inline-flex items-center gap-2 text-[10px] font-black uppercase tracking-widest text-[#4A3728] hover:gap-4 transition-all">
+                    Read More <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- customer rating wala -->
+ <section class="bg-white py-24 px-6 md:px-12 overflow-hidden">
+    <div class="max-w-7xl mx-auto">
+        
+        <div class="text-center mb-16 space-y-4">
+            <p class="text-[11px] font-bold tracking-[0.4em] text-[#C6865D] uppercase">05 _ Guest Reviews</p>
+            <h2 class="font-serif text-5xl md:text-6xl text-[#4A3728]">Customer Satisfaction</h2>
+        </div>
+
+        <div class="relative group">
+            <div id="testimonialSlider" class="flex gap-8 overflow-x-auto snap-x snap-mandatory no-scrollbar scroll-smooth pb-10">
+                
+                <div class="min-w-[350px] md:min-w-[450px] bg-[#FDFBF9] rounded-[2.5rem] p-10 snap-start border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-500">
+                    <div class="flex items-center gap-4 mb-6">
+                        <img src="https://i.pravatar.cc/150?u=sarah" class="w-16 h-16 rounded-full border-2 border-[#C6865D] p-1" alt="Sarah J.">
+                        <div>
+                            <h4 class="font-bold text-[#4A3728]">Sarah Johnson</h4>
+                            <div class="flex text-[#C6865D] text-xs gap-1">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-500 italic leading-relaxed">
+                        "The booking process was incredibly smooth. The room exceeded my expectations with its stunning views and luxury amenities. Safar truly knows how to treat their guests!"
+                    </p>
+                    <div class="mt-6 text-[10px] font-bold text-gray-400 uppercase tracking-widest">Stayed at: Golden Horizon Retreat</div>
+                </div>
+
+                <div class="min-w-[350px] md:min-w-[450px] bg-[#FDFBF9] rounded-[2.5rem] p-10 snap-start border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-500">
+                    <div class="flex items-center gap-4 mb-6">
+                        <img src="https://i.pravatar.cc/150?u=mike" class="w-16 h-16 rounded-full border-2 border-[#C6865D] p-1" alt="Michael R.">
+                        <div>
+                            <h4 class="font-bold text-[#4A3728]">Michael Ross</h4>
+                            <div class="flex text-[#C6865D] text-xs gap-1">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-500 italic leading-relaxed">
+                        "Professional staff and a very intuitive website. I was able to find a pet-friendly hotel in minutes. Highly recommended for frequent travelers."
+                    </p>
+                    <div class="mt-6 text-[10px] font-bold text-gray-400 uppercase tracking-widest">Stayed at: Serenity Grand Hotel</div>
+                </div>
+
+                <div class="min-w-[350px] md:min-w-[450px] bg-[#FDFBF9] rounded-[2.5rem] p-10 snap-start border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-500">
+                    <div class="flex items-center gap-4 mb-6">
+                        <img src="https://i.pravatar.cc/150?u=emily" class="w-16 h-16 rounded-full border-2 border-[#C6865D] p-1" alt="Emily D.">
+                        <div>
+                            <h4 class="font-bold text-[#4A3728]">Emily Davis</h4>
+                            <div class="flex text-[#C6865D] text-xs gap-1">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-500 italic leading-relaxed">
+                        "The 'King Size' bed selection tool helped me pick exactly what I needed. Everything from the check-in to the morning coffee was perfect."
+                    </p>
+                    <div class="mt-6 text-[10px] font-bold text-gray-400 uppercase tracking-widest">Stayed at: The Velvet Orchid</div>
+                </div>
+
+            </div>
+
+            
+        </div>
+    </div>
+</section>
+
+<!-- blog -->
+ <section class="bg-[#F9F7F5] py-24 px-6 md:px-12">
+    <div class="max-w-7xl mx-auto">
+        
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+            <div class="space-y-4">
+                <p class="text-[11px] font-bold tracking-[0.4em] text-[#C6865D] uppercase">06 _ From Our Journal</p>
+                <h2 class="font-serif text-5xl md:text-6xl text-[#4A3728]">Read Latest Blog</h2>
+            </div>
+            
+            <a href="#" class="group flex items-center gap-3 bg-[#4A3728] px-8 py-4 rounded-full shadow-sm hover:bg-[#4A3728] transition-all duration-300">
+                <span class="text-xs font-black uppercase tracking-widest text-white group-hover:text-white">Explore All Blogs</span>
+                <div class="w-8 h-8 rounded-full bg-[#F9F7F5] flex items-center justify-center text-[#C6865D] group-hover:bg-white/20 group-hover:text-white transition-colors">
+                    <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                </div>
+            </a>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+            
+            <div class="group bg-white rounded-[2.5rem] overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500">
+                <div class="relative h-64 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?q=80&w=800" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute top-6 left-6 bg-white/90 backdrop-blur-md px-4 py-2 rounded-full shadow-lg">
+                        <span class="text-[10px] font-black text-[#C6865D] uppercase tracking-widest">Travel</span>
+                    </div>
+                </div>
+                <div class="p-8 space-y-4">
+                    <div class="flex items-center gap-4 text-[10px] font-bold text-gray-400 uppercase tracking-widest">
+                        <span><i class="fa-regular fa-calendar-days text-[#C6865D] mr-1"></i> Jan 28, 2026</span>
+                        <span><i class="fa-regular fa-user text-[#C6865D] mr-1"></i> By Admin</span>
+                    </div>
+                    <h3 class="text-2xl font-serif text-[#4A3728] group-hover:text-[#C6865D] transition-colors leading-snug">
+                        Top 10 Hidden Gem Resorts in the Maldives for 2026
+                    </h3>
+                    <p class="text-sm text-gray-500 line-clamp-2">
+                        Discover untouched paradises and exclusive retreats that offer the ultimate privacy and luxury...
+                    </p>
+                    <a href="#" class="inline-flex items-center gap-2 text-xs font-black uppercase tracking-[0.2em] text-[#4A3728] hover:gap-4 transition-all pt-4 border-t border-gray-100 w-full">
+                        Read More <i class="fa-solid fa-arrow-right-long text-[#C6865D]"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="group bg-white rounded-[2.5rem] overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500">
+                <div class="relative h-64 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1445019980597-93fa8acb246c?q=80&w=800" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute top-6 left-6 bg-white/90 backdrop-blur-md px-4 py-2 rounded-full shadow-lg">
+                        <span class="text-[10px] font-black text-[#C6865D] uppercase tracking-widest">Lifestyle</span>
+                    </div>
+                </div>
+                <div class="p-8 space-y-4">
+                    <div class="flex items-center gap-4 text-[10px] font-bold text-gray-400 uppercase tracking-widest">
+                        <span><i class="fa-regular fa-calendar-days text-[#C6865D] mr-1"></i> Jan 25, 2026</span>
+                        <span><i class="fa-regular fa-user text-[#C6865D] mr-1"></i> By Staff</span>
+                    </div>
+                    <h3 class="text-2xl font-serif text-[#4A3728] group-hover:text-[#C6865D] transition-colors leading-snug">
+                        The Ultimate Guide to Sustainable Luxury Travel
+                    </h3>
+                    <p class="text-sm text-gray-500 line-clamp-2">
+                        How to enjoy high-end hospitality while maintaining an eco-friendly footprint on your next journey...
+                    </p>
+                    <a href="#" class="inline-flex items-center gap-2 text-xs font-black uppercase tracking-[0.2em] text-[#4A3728] hover:gap-4 transition-all pt-4 border-t border-gray-100 w-full">
+                        Read More <i class="fa-solid fa-arrow-right-long text-[#C6865D]"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="group bg-white rounded-[2.5rem] overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500">
+                <div class="relative h-64 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?q=80&w=800" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute top-6 left-6 bg-white/90 backdrop-blur-md px-4 py-2 rounded-full shadow-lg">
+                        <span class="text-[10px] font-black text-[#C6865D] uppercase tracking-widest">Interior</span>
+                    </div>
+                </div>
+                <div class="p-8 space-y-4">
+                    <div class="flex items-center gap-4 text-[10px] font-bold text-gray-400 uppercase tracking-widest">
+                        <span><i class="fa-regular fa-calendar-days text-[#C6865D] mr-1"></i> Jan 20, 2026</span>
+                        <span><i class="fa-regular fa-user text-[#C6865D] mr-1"></i> By Admin</span>
+                    </div>
+                    <h3 class="text-2xl font-serif text-[#4A3728] group-hover:text-[#C6865D] transition-colors leading-snug">
+                        Crafting Comfort: The Secret Behind Our Luxury Bedding
+                    </h3>
+                    <p class="text-sm text-gray-500 line-clamp-2">
+                        Take a look inside the design process of our signature King Size beds and premium silk linens...
+                    </p>
+                    <a href="#" class="inline-flex items-center gap-2 text-xs font-black uppercase tracking-[0.2em] text-[#4A3728] hover:gap-4 transition-all pt-4 border-t border-gray-100 w-full">
+                        Read More <i class="fa-solid fa-arrow-right-long text-[#C6865D]"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- footer -->
+ <footer class="bg-[#322319] text-white pt-20 pb-10 px-6 md:px-12 relative overflow-hidden">
+    <div class="absolute bottom-0 right-0 opacity-[0.03] pointer-events-none select-none">
+        <h1 class="text-[20rem] font-black leading-none translate-y-20 translate-x-20">SAFAR</h1>
+    </div>
+
+    <div class="max-w-7xl mx-auto relative z-10">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
+            
+            <div class="space-y-6">
+                <div class="flex items-center gap-3">
+                    <div class="bg-white/10 p-2 rounded-lg backdrop-blur-sm border border-white/10">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2983/2983791.png" class="w-8 invert" alt="Safar Logo">
+                    </div>
+                    <span class="text-2xl font-bold tracking-tight">SAFAR <br><span class="text-[10px] uppercase tracking-[0.3em] font-light opacity-60">Hotel Booking</span></span>
+                </div>
+                <p class="text-gray-400 text-sm leading-relaxed">
+                    Our hotel reservations offer top-rated stays, secure payments, flexible options, and instant confirmation worldwide.
+                </p>
+                <div class="flex items-center gap-3">
+                    <span class="text-xs font-bold uppercase tracking-widest text-gray-500 mr-2">Follow Us On:</span>
+                    <a href="#" class="w-9 h-9 bg-white/5 rounded-lg flex items-center justify-center hover:bg-[#C6865D] transition-colors"><i class="fa-brands fa-facebook-f text-sm"></i></a>
+                    <a href="#" class="w-9 h-9 bg-white/5 rounded-lg flex items-center justify-center hover:bg-[#C6865D] transition-colors"><i class="fa-brands fa-x-twitter text-sm"></i></a>
+                    <a href="#" class="w-9 h-9 bg-white/5 rounded-lg flex items-center justify-center hover:bg-[#C6865D] transition-colors"><i class="fa-brands fa-instagram text-sm"></i></a>
+                    <a href="#" class="w-9 h-9 bg-white/5 rounded-lg flex items-center justify-center hover:bg-[#C6865D] transition-colors"><i class="fa-brands fa-linkedin-in text-sm"></i></a>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="text-xl font-serif mb-8">Support</h4>
+                <ul class="space-y-4 text-gray-400 text-sm">
+                    <li><a href="#" class="hover:text-[#C6865D] transition-colors">Get In Touch</a></li>
+                    <li><a href="#" class="hover:text-[#C6865D] transition-colors">Offers & Promotions</a></li>
+                    <li><a href="#" class="hover:text-[#C6865D] transition-colors">Privacy Policy</a></li>
+                    <li><a href="#" class="hover:text-[#C6865D] transition-colors border-b border-[#C6865D] pb-1">Terms & Conditions</a></li>
+                    <li><a href="#" class="hover:text-[#C6865D] transition-colors">View Sitemap</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-xl font-serif mb-8">Contact Info</h4>
+                <ul class="space-y-6 text-gray-400 text-sm">
+                    <li class="flex items-center gap-4">
+                        <i class="fa-solid fa-globe text-[#C6865D]"></i>
+                        <span>www.example.com</span>
+                    </li>
+                    <li class="flex items-center gap-4">
+                        <i class="fa-solid fa-phone text-[#C6865D]"></i>
+                        <span>+41 22 345 77 89</span>
+                    </li>
+                    <li class="flex items-center gap-4">
+                        <i class="fa-solid fa-envelope text-[#C6865D]"></i>
+                        <span>safar@example.com</span>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <i class="fa-solid fa-location-dot text-[#C6865D] mt-1"></i>
+                        <span>Cedarbrook Rd. Tucson, Arizona <br> Rue de Lausanne</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="space-y-6">
+                <h4 class="text-xl font-serif">Subscribe Newsletter</h4>
+                <p class="text-gray-400 text-sm leading-relaxed">
+                    Stay updated with exclusive offers, travel tips, and latest hotel news weekly.
+                </p>
+                <form class="space-y-4">
+                    <div class="relative">
+                        <i class="fa-regular fa-envelope absolute left-4 top-1/2 -translate-y-1/2 text-gray-500"></i>
+                        <input type="email" placeholder="Enter Your Mail Address" 
+                            class="w-full bg-white/5 border border-white/10 rounded-xl py-4 pl-12 pr-4 text-sm outline-none focus:border-[#C6865D] transition-colors">
+                    </div>
+                    <button class="w-full bg-[#C6865D] hover:bg-[#B5754C] text-white py-4 px-6 rounded-full font-bold text-sm tracking-widest flex items-center justify-center gap-3 transition-all group shadow-lg shadow-black/20">
+                        SUBSCRIBE NOW 
+                        <span class="bg-white text-[#C6865D] w-7 h-7 rounded-full flex items-center justify-center group-hover:translate-x-1 transition-transform">
+                            <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                        </span>
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <div class="mt-20 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
+            <p class="text-[10px] text-gray-500 uppercase tracking-widest font-bold">© 2026 SAFAR. ALL RIGHTS RESERVED.</p>
+            <div class="flex gap-6 text-[10px] text-gray-500 uppercase tracking-widest font-bold">
+                <a href="#" class="hover:text-white transition-colors">Privacy</a>
+                <a href="#" class="hover:text-white transition-colors">Cookies</a>
+                <a href="#" class="hover:text-white transition-colors">Safety</a>
+            </div>
+        </div>
+    </div>
+</footer>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        
+        // --- 1. BED SELECTION LOGIC ---
+        // Toggles between Normal and King images with a smooth cross-fade
+        window.switchBed = function(type) {
+            const img = document.getElementById('bed-image');
+            const btnNormal = document.getElementById('btn-normal');
+            const btnKing = document.getElementById('btn-king');
+
+            if (!img || !btnNormal || !btnKing) return;
+
+            img.style.opacity = '0'; // Start fade out
+
+            setTimeout(() => {
+                if (type === 'king') {
+                    img.src = "https://img.freepik.com/free-psd/elegant-unmade-bed-with-beige-sheets-gray-duvet_191095-81422.jpg?semt=ais_hybrid&w=740&q=80";
+                    btnKing.className = "px-8 py-3 rounded-full font-bold text-sm transition-all bg-[#4A3728] text-white shadow-lg";
+                    btnNormal.className = "px-8 py-3 rounded-full font-bold text-sm transition-all text-gray-400 hover:text-[#4A3728]";
+                } else {
+                    img.src = "https://www.transparentpng.com/download/bed/black-white-elegant-bed-png-hd--rgrF4o.png";
+                    btnNormal.className = "px-8 py-3 rounded-full font-bold text-sm transition-all bg-[#4A3728] text-white shadow-lg";
+                    btnKing.className = "px-8 py-3 rounded-full font-bold text-sm transition-all text-gray-400 hover:text-[#4A3728]";
+                }
+                img.style.opacity = '1'; // Fade back in
+            }, 300);
+        };
+
+        // --- 2. CATEGORY SLIDER LOGIC (1s Interval) ---
+        const catSlider = document.getElementById('categorySlider');
+        let catInterval;
+
+        window.scrollSlider = function(direction) {
+            if (!catSlider) return;
+            const scrollAmount = 324; // Card width + gap
+            
+            if (direction === 'next') {
+                // Reset to start if at the end for infinite loop feel
+                if (catSlider.scrollLeft + catSlider.clientWidth >= catSlider.scrollWidth - 10) {
+                    catSlider.scrollTo({ left: 0, behavior: 'smooth' });
+                } else {
+                    catSlider.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+                }
+            } else {
+                catSlider.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+            }
+        };
+
+        function startCatAutoScroll() {
+            if (!catSlider) return;
+            catInterval = setInterval(() => scrollSlider('next'), 1000); // 1 second
+        }
+
+        window.pauseAutoScroll = () => clearInterval(catInterval);
+        window.resumeAutoScroll = () => startCatAutoScroll();
+
+        // Pause Category Slider on Hover
+        if (catSlider) {
+            catSlider.addEventListener('mouseenter', window.pauseAutoScroll);
+            catSlider.addEventListener('mouseleave', window.resumeAutoScroll);
+        }
+
+        // --- 3. TESTIMONIAL SLIDER LOGIC (3s Interval) ---
+        const testSlider = document.getElementById('testimonialSlider');
+        let testInterval;
+
+        function startTestAutoScroll() {
+            if (!testSlider) return;
+            testInterval = setInterval(() => {
+                if (testSlider.scrollLeft + testSlider.clientWidth >= testSlider.scrollWidth - 10) {
+                    testSlider.scrollTo({ left: 0, behavior: 'smooth' });
+                } else {
+                    testSlider.scrollBy({ left: 400, behavior: 'smooth' });
+                }
+            }, 3000); // 3 seconds
+        }
+
+        function stopTestAutoScroll() {
+            clearInterval(testInterval);
+        }
+
+        // Pause Testimonial Slider on Hover
+        if (testSlider) {
+            testSlider.addEventListener('mouseenter', stopTestAutoScroll);
+            testSlider.addEventListener('mouseleave', startTestAutoScroll);
+        }
+
+        // --- INITIALIZATION ---
+        startCatAutoScroll();
+        startTestAutoScroll();
+    });
+</script>
+    </body>
+    </html>
