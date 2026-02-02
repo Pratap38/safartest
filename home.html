@@ -858,7 +858,7 @@
     document.addEventListener('DOMContentLoaded', () => {
         
         // --- 1. BED SELECTION LOGIC ---
-        // Toggles between Normal and King images with a smooth cross-fade
+    
         window.switchBed = function(type) {
             const img = document.getElementById('bed-image');
             const btnNormal = document.getElementById('btn-normal');
@@ -891,7 +891,7 @@
             const scrollAmount = 324; // Card width + gap
             
             if (direction === 'next') {
-                // Reset to start if at the end for infinite loop feel
+               
                 if (catSlider.scrollLeft + catSlider.clientWidth >= catSlider.scrollWidth - 10) {
                     catSlider.scrollTo({ left: 0, behavior: 'smooth' });
                 } else {
@@ -904,7 +904,7 @@
 
         function startCatAutoScroll() {
             if (!catSlider) return;
-            catInterval = setInterval(() => scrollSlider('next'), 1000); // 1 second
+            catInterval = setInterval(() => scrollSlider('next'), 1000); 
         }
 
         window.pauseAutoScroll = () => clearInterval(catInterval);
@@ -916,7 +916,7 @@
             catSlider.addEventListener('mouseleave', window.resumeAutoScroll);
         }
 
-        // --- 3. TESTIMONIAL SLIDER LOGIC (3s Interval) ---
+        // --- 3. TESTIMONIAL SLIDER LOGIC  ---
         const testSlider = document.getElementById('testimonialSlider');
         let testInterval;
 
@@ -928,14 +928,14 @@
                 } else {
                     testSlider.scrollBy({ left: 400, behavior: 'smooth' });
                 }
-            }, 3000); // 3 seconds
+            }, 3000);
         }
 
         function stopTestAutoScroll() {
             clearInterval(testInterval);
         }
 
-        // Pause Testimonial Slider on Hover
+       
         if (testSlider) {
             testSlider.addEventListener('mouseenter', stopTestAutoScroll);
             testSlider.addEventListener('mouseleave', startTestAutoScroll);
